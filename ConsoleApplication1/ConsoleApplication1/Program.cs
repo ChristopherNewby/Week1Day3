@@ -40,9 +40,10 @@ namespace ConsoleApplication1
                     DrawGrid(myArray);
                     ticTacToe = Solution(myArray);
                 }
-                //Console.ReadLine();
+                
 
                 Console.WriteLine("Would you like to play again? (y/n)");
+                Console.WriteLine(" ");
                 string answer = Console.ReadLine();
                     if (answer.Substring(0, 1).ToLower() == "n")
                         wholeGame = false;
@@ -116,41 +117,49 @@ namespace ConsoleApplication1
             if ((solutionArray[0]) == (solutionArray[1]) && (solutionArray[1]) == (solutionArray[2]))
             {
                 Console.WriteLine("Congratulations! We have a winner!");
+                Console.WriteLine(" ");
                 return false;
             }
             else if ((solutionArray[3]) == (solutionArray[4]) && (solutionArray[4]) == (solutionArray[5]))
             {
                 Console.WriteLine("Congratulations! We have a winner!");
+                Console.WriteLine(" ");
                 return false;
             }
             else if ((solutionArray[6]) == (solutionArray[7]) && (solutionArray[7]) == (solutionArray[8]))
             {
                 Console.WriteLine("Congratulations! We have a winner!");
+                Console.WriteLine(" ");
                 return false;
             }
             else if ((solutionArray[0]) == (solutionArray[3]) && (solutionArray[3]) == (solutionArray[6]))
             {
                 Console.WriteLine("Congratulations! We have a winner!");
+                Console.WriteLine(" ");
                 return false;
             }
             else if ((solutionArray[1]) == (solutionArray[4]) && (solutionArray[4]) == (solutionArray[7]))
             {
                 Console.WriteLine("Congratulations! We have a winner!");
+                Console.WriteLine(" ");
                 return false;
             }
             else if ((solutionArray[2]) == (solutionArray[5]) && (solutionArray[5]) == (solutionArray[8]))
             {
                 Console.WriteLine("Congratulations! We have a winner!");
+                Console.WriteLine(" ");
                 return false;
             }
             else if ((solutionArray[0]) == (solutionArray[4]) && (solutionArray[4]) == (solutionArray[8]))
             {
                 Console.WriteLine("Congratulations! We have a winner!");
+                Console.WriteLine(" ");
                 return false;
             }
             else if ((solutionArray[6]) == (solutionArray[4]) && (solutionArray[4]) == (solutionArray[2]))
             {
                 Console.WriteLine("Congratulations! We have a winner!");
+                Console.WriteLine(" ");
                 return false;
             }
             else
